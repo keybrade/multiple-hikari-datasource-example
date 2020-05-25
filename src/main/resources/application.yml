@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    foo:
+      jdbcUrl: jdbc:mysql://localhost:3306/foo?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 1123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      minimum-idle: 4
+      maximum-pool-size: 24
+      max-lifetime: 1500000
+      idle-timeout: 600000
+      jpa:
+        hibernate:
+          hbm2ddl.auto: create-drop
+          show_sql: true
+          format_sql: false
+    bar:
+      jdbcUrl: jdbc:mysql://localhost:3306/bar?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 1123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      minimum-idle: 4
+      maximum-pool-size: 24
+      max-lifetime: 1500000
+      idle-timeout: 600000
+      jpa:
+        hibernate:
+          hbm2ddl.auto: create-drop
+          show_sql: true
+          format_sql: false
