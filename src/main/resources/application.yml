@@ -10,10 +10,14 @@ spring:
       max-lifetime: 1500000
       idle-timeout: 600000
       jpa:
+        show-sql: true
+        generate-ddl: true
+        open-in-view: true
         hibernate:
-          hbm2ddl.auto: create-drop
-          show_sql: true
-          format_sql: false
+          naming:
+            physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+          ddl-auto: create-drop
+          use-new-id-generator-mappings: true
     bar:
       jdbcUrl: jdbc:mysql://localhost:3306/bar?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
       username: root
@@ -24,7 +28,12 @@ spring:
       max-lifetime: 1500000
       idle-timeout: 600000
       jpa:
+        show-sql: true
+        generate-ddl: true
+        open-in-view: true
         hibernate:
-          hbm2ddl.auto: create-drop
-          show_sql: true
-          format_sql: false
+          naming:
+            physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+          ddl-auto: create-drop
+          use-new-id-generator-mappings: true
+
