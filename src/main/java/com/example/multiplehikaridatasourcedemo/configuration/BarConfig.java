@@ -19,9 +19,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
-/**
- * @author Jay Ehsaniara, Dec
- */
 @Slf4j
 @Configuration
 @EnableTransactionManagement
